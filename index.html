@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit Elite - Treinamento de Alta Performance</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1786/1786971.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>PowerFit Elite</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#inicio">Início</a>
+            <a href="#avaliacao">Avaliação</a>
+            <a href="#treinos">Treinos</a>
+            <a href="#dieta">Nutrição</a>
+            <a href="#calculadora">Calculadora</a>
+            <a href="#suplementacao">Suplementos</a>
+        </div>
+        <div class="menu-mobile">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Alcance Seu Potencial Máximo</h1>
+            <p>Treinamento personalizado de alta performance baseado em ciência e tecnologia</p>
+        </div>
+    </header>
+
+    <section id="avaliacao" class="section">
+        <h2>Avaliação de Performance Elite</h2>
+        <div class="assessment-cards">
+            <div class="assessment-card">
+                <i class="fas fa-dna"></i>
+                <h3>Análise Genética</h3>
+                <p>Perfil genético para otimização do treino</p>
+            </div>
+            <div class="assessment-card">
+                <i class="fas fa-running"></i>
+                <h3>Performance Test</h3>
+                <p>Avaliação completa de capacidade física</p>
+            </div>
+            <div class="assessment-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>VO2 Max</h3>
+                <p>Teste de capacidade cardiorrespiratória</p>
+            </div>
+            <div class="assessment-card">
+                <i class="fas fa-brain"></i>
+                <h3>Neural Mapping</h3>
+                <p>Análise de padrões neuromotores</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="treinos" class="section">
+        <h2>Tabela de Treinos</h2>
+        <div class="weekly-workouts">
+            <div class="workout-day">
+                <h3>Segunda-feira</h3>
+                <h4>Peito e Tríceps</h4>
+                <ul>
+                    <li>Supino Reto (4x12)</li>
+                    <li>Supino Inclinado (4x12)</li>
+                    <li>Crucifixo (3x15)</li>
+                    <li>Extensão de Tríceps (4x12)</li>
+                    <li>Corda na Polia (3x15)</li>
+                    <li>Extensão Testa (3x12)</li>
+                </ul>
+            </div>
+            <div class="workout-day">
+                <h3>Terça-feira</h3>
+                <h4>Costas e Bíceps</h4>
+                <ul>
+                    <li>Puxada Frontal (4x12)</li>
+                    <li>Remada Baixa (4x12)</li>
+                    <li>Pulldown (3x15)</li>
+                    <li>Rosca Direta (4x12)</li>
+                    <li>Rosca Martelo (3x15)</li>
+                    <li>Rosca Scott (3x12)</li>
+                </ul>
+            </div>
+            <div class="workout-day">
+                <h3>Quarta-feira</h3>
+                <h4>Pernas</h4>
+                <ul>
+                    <li>Agachamento (4x12)</li>
+                    <li>Leg Press (4x15)</li>
+                    <li>Cadeira Extensora (4x15)</li>
+                    <li>Mesa Flexora (4x12)</li>
+                    <li>Panturrilha (4x20)</li>
+                    <li>Stiff (3x12)</li>
+                </ul>
+            </div>
+            <div class="workout-day">
+                <h3>Quinta-feira</h3>
+                <h4>Ombro e Abdômen</h4>
+                <ul>
+                    <li>Desenvolvimento (4x12)</li>
+                    <li>Elevação Lateral (4x12)</li>
+                    <li>Elevação Frontal (3x15)</li>
+                    <li>Abdominal Supra (4x25)</li>
+                    <li>Prancha (4x45s)</li>
+                    <li>Infra (3x20)</li>
+                </ul>
+            </div>
+            <div class="workout-day">
+                <h3>Sexta-feira</h3>
+                <h4>Full Body</h4>
+                <ul>
+                    <li>Supino Reto (3x12)</li>
+                    <li>Puxada Frontal (3x12)</li>
+                    <li>Agachamento (3x15)</li>
+                    <li>Desenvolvimento (3x12)</li>
+                    <li>Rosca Alternada (3x12)</li>
+                    <li>Tríceps Corda (3x15)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="workout-planner">
+            <div class="workout-controls">
+                <button id="addExercise" class="action-button">
+                    <i class="fas fa-plus"></i> Adicionar Exercício
+                </button>
+            </div>
+            <div class="workout-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Exercício</th>
+                            <th>Séries</th>
+                            <th>Repetições</th>
+                            <th>Carga (kg)</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="workoutList">
+                        <!-- Exercícios serão adicionados aqui via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="dieta" class="section">
+        <h2>Rastreamento de Dieta</h2>
+        <div class="diet-tracker">
+            <div class="macro-summary">
+                <div class="macro-card">
+                    <h3>Calorias</h3>
+                    <p id="totalCalorias">0</p>
+                </div>
+                <div class="macro-card">
+                    <h3>Proteínas</h3>
+                    <p id="totalProteinas">0g</p>
+                </div>
+                <div class="macro-card">
+                    <h3>Carboidratos</h3>
+                    <p id="totalCarboidratos">0g</p>
+                </div>
+                <div class="macro-card">
+                    <h3>Gorduras</h3>
+                    <p id="totalGorduras">0g</p>
+                </div>
+            </div>
+            <div class="food-input">
+                <input type="text" id="foodName" placeholder="Nome do alimento">
+                <input type="number" id="calories" placeholder="Calorias">
+                <button id="addFood" class="action-button">Adicionar Alimento</button>
+            </div>
+            <div class="food-list" id="foodList">
+                <!-- Alimentos serão adicionados aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="section">
+        <h2>Calculadora de Taxa Metabólica Basal</h2>
+        <div class="tmb-calculator">
+            <div class="calculator-form">
+                <div class="input-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" placeholder="Anos">
+                </div>
+                <div class="input-group">
+                    <label for="peso">Peso:</label>
+                    <input type="number" id="peso" placeholder="kg">
+                </div>
+                <div class="input-group">
+                    <label for="altura">Altura:</label>
+                    <input type="number" id="altura" placeholder="cm">
+                </div>
+                <div class="input-group">
+                    <label>Sexo:</label>
+                    <select id="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Nível de Atividade:</label>
+                    <select id="nivelAtividade">
+                        <option value="1.2">Sedentário</option>
+                        <option value="1.375">Levemente Ativo</option>
+                        <option value="1.55">Moderadamente Ativo</option>
+                        <option value="1.725">Muito Ativo</option>
+                        <option value="1.9">Extremamente Ativo</option>
+                    </select>
+                </div>
+                <button id="calcularTMB" class="action-button">Calcular TMB</button>
+            </div>
+            <div class="result-card" id="resultadoTMB">
+                <h3>Sua Taxa Metabólica Basal</h3>
+                <p class="tmb-result">0 kcal/dia</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="suplementacao" class="section">
+        <h2>Suplementação Inteligente</h2>
+        <div class="supplements-grid">
+            <div class="supplement-card">
+                <h3>Whey Protein</h3>
+                <p>Recuperação muscular e ganho de massa magra</p>
+                <ul>
+                    <li>Concentrado</li>
+                    <li>Isolado</li>
+                    <li>Hidrolisado</li>
+                </ul>
+            </div>
+            <div class="supplement-card">
+                <h3>BCAA</h3>
+                <p>Aminoácidos essenciais para performance</p>
+                <ul>
+                    <li>Leucina</li>
+                    <li>Isoleucina</li>
+                    <li>Valina</li>
+                </ul>
+            </div>
+            <div class="supplement-card">
+                <h3>Creatina</h3>
+                <p>Força e potência muscular</p>
+                <ul>
+                    <li>Monohidratada</li>
+                    <li>Micronizada</li>
+                    <li>Creapura®</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PowerFit Elite</h3>
+                <p>Excelência em resultados desde 2010</p>
+                <p>CREF: 000000-G/SP</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navegação</h4>
+                <a href="#inicio">Home</a>
+                <a href="#avaliacao">Performance</a>
+                <a href="#treinos">Workouts</a>
+                <a href="#dieta">Nutrição</a>
+                <a href="#suplementacao">Suplementos</a>
+                <a href="#calculadora">Métricas</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                <p><i class="fas fa-envelope"></i> contato@powerfitelite.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PowerFit Elite. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
