@@ -23,6 +23,3 @@ Projeto de um site completo para acompanhamento de treinos, dieta, avaliação f
 - JavaScript
 - Font Awesome
 - Google Fonts (Montserrat)
-
-## 📁 Estrutura de Pastas
-
